@@ -1,0 +1,67 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:137.0) Gecko/20100101 Firefox/137.0" version="28.0.9">
+  <diagram name="Strona-1" id="_9ItplnvDLS_1K2Q0pN2">
+    <mxGraphModel dx="1678" dy="911" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="59b08eBE7w6uid4_y-NQ-19" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="280" width="880" height="410" as="geometry" />
+        </mxCell>
+        <mxCell id="59b08eBE7w6uid4_y-NQ-1" value="http.server.requests" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="610" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="59b08eBE7w6uid4_y-NQ-3" value="No measure here" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="610" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="59b08eBE7w6uid4_y-NQ-4" value="Current for server metric " style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e51400;fontColor=#ffffff;strokeColor=#B20000;" vertex="1" parent="1">
+          <mxGeometry x="160" y="520" width="360" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="59b08eBE7w6uid4_y-NQ-5" value="http.server.requests" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="610" width="360" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="59b08eBE7w6uid4_y-NQ-7" value="Expected for server metric " style="rounded=1;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" vertex="1" parent="1">
+          <mxGeometry x="600" y="520" width="360" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="59b08eBE7w6uid4_y-NQ-8" value="http.server.pending" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="640" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="59b08eBE7w6uid4_y-NQ-9" value="http.client.requests" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="400" width="360" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="59b08eBE7w6uid4_y-NQ-11" value="Current for client metric " style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e51400;fontColor=#ffffff;strokeColor=#B20000;" vertex="1" parent="1">
+          <mxGeometry x="160" y="310" width="360" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="59b08eBE7w6uid4_y-NQ-12" value="http.client.requests" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="760" y="400" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="59b08eBE7w6uid4_y-NQ-13" value="Expected for client metric " style="rounded=1;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" vertex="1" parent="1">
+          <mxGeometry x="600" y="310" width="360" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="59b08eBE7w6uid4_y-NQ-14" value="http.client.pending" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="400" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="59b08eBE7w6uid4_y-NQ-16" value="SEPARATOR" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#6a00ff;fontColor=#ffffff;strokeColor=#3700CC;" vertex="1" parent="1">
+          <mxGeometry x="160" y="460" width="810" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="59b08eBE7w6uid4_y-NQ-17" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;fillColor=#1ba1e2;strokeColor=#006EAF;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="540" y="549.41" as="sourcePoint" />
+            <mxPoint x="590" y="549.41" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="570" y="549.41" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="59b08eBE7w6uid4_y-NQ-18" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;fillColor=#1ba1e2;strokeColor=#006EAF;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="540" y="339.40999999999997" as="sourcePoint" />
+            <mxPoint x="590" y="339.40999999999997" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="570" y="339.40999999999997" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

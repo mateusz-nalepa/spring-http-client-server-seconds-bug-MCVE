@@ -1,0 +1,109 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:137.0) Gecko/20100101 Firefox/137.0" version="28.0.7">
+  <diagram name="Strona-1" id="-2TSdLy00n9XIhNWjO1P">
+    <mxGraphModel dx="5580" dy="3749" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2GRehvNXeIB6Kh1DUvyV-56" value="s" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-90" y="-260" width="1760" height="1440" as="geometry" />
+        </mxCell>
+        <mxCell id="2GRehvNXeIB6Kh1DUvyV-3" value="First batch of requests arrival" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="100" y="350" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="2GRehvNXeIB6Kh1DUvyV-4" value="Server Threads&lt;br&gt;&lt;div&gt;Submit request for WebClient&lt;/div&gt;&lt;div&gt;Time: 0s&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="160" y="170" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2GRehvNXeIB6Kh1DUvyV-7" value="&lt;div&gt;Client Threads&lt;/div&gt;&lt;div&gt;Get response from mock after 0s&lt;/div&gt;&lt;div&gt;Execute cpu bound operation for 10s&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="400" y="170" width="540" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2GRehvNXeIB6Kh1DUvyV-8" value="" style="endArrow=none;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint y="320" as="sourcePoint" />
+            <mxPoint x="1600" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2GRehvNXeIB6Kh1DUvyV-9" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" parent="1" target="2GRehvNXeIB6Kh1DUvyV-4" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="160" y="340" as="sourcePoint" />
+            <mxPoint x="160" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2GRehvNXeIB6Kh1DUvyV-11" value="&lt;div&gt;Second batch of request arrival 2s after first batch&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="380" y="350" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="2GRehvNXeIB6Kh1DUvyV-13" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="2GRehvNXeIB6Kh1DUvyV-11" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="459.76" y="320" as="sourcePoint" />
+            <mxPoint x="460" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2GRehvNXeIB6Kh1DUvyV-14" value="http.client.requests - TOO EARLY - Undertow App + WebClient with Reactor Connector" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry y="-160" width="1600" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2GRehvNXeIB6Kh1DUvyV-15" value="&lt;div&gt;Server Threads&lt;/div&gt;&lt;div&gt;Submit request for WebClient&lt;/div&gt;&lt;div&gt;&lt;div&gt;Time: 0s&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="460" y="240" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2GRehvNXeIB6Kh1DUvyV-16" value="&lt;div&gt;Client Threads&lt;/div&gt;&lt;div&gt;Get response from mock after 7s&lt;/div&gt;&lt;div&gt;Execute cpu bound operation for 10s&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="940" y="240" width="320" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2GRehvNXeIB6Kh1DUvyV-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="2GRehvNXeIB6Kh1DUvyV-18" target="2GRehvNXeIB6Kh1DUvyV-30" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2GRehvNXeIB6Kh1DUvyV-18" value="&lt;div&gt;All server threads are busy. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;But http.client observation will start 8s before sending an request&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e51400;strokeColor=#B20000;fontColor=#ffffff;" parent="1" vertex="1">
+          <mxGeometry x="720" y="15" width="200" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="2GRehvNXeIB6Kh1DUvyV-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=0;entryDy=0;" parent="1" source="2GRehvNXeIB6Kh1DUvyV-19" target="2GRehvNXeIB6Kh1DUvyV-7" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2GRehvNXeIB6Kh1DUvyV-19" value="&lt;div&gt;All webClients threads are free.&lt;/div&gt;&lt;div&gt;Tasks are immediately sent by WebClient &lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+          <mxGeometry x="310" y="15" width="180" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="2GRehvNXeIB6Kh1DUvyV-30" value="" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="700" y="240" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2GRehvNXeIB6Kh1DUvyV-37" value="http.server.requests - TOO LATE - Virtual Threads" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry y="540" width="1600" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MRu5OoeNUI8XGwZFlb8Y-1" value="First batch of requests arrival" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="1015" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="MRu5OoeNUI8XGwZFlb8Y-2" value="Server Threads&lt;div&gt;Submit request for RestClient&lt;/div&gt;&lt;div&gt;Time: 0s&lt;/div&gt;&lt;div&gt;&lt;div&gt;Get response from mock after 0s&lt;/div&gt;&lt;div&gt;Execute cpu bound operation for 10s&lt;/div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="160" y="760" width="780" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="MRu5OoeNUI8XGwZFlb8Y-4" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint y="985" as="sourcePoint" />
+            <mxPoint x="1600" y="995" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MRu5OoeNUI8XGwZFlb8Y-5" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" target="MRu5OoeNUI8XGwZFlb8Y-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="160" y="1005" as="sourcePoint" />
+            <mxPoint x="160" y="965" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MRu5OoeNUI8XGwZFlb8Y-6" value="&lt;div&gt;Second batch of request arrival 2s after first batch&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="1015" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="MRu5OoeNUI8XGwZFlb8Y-7" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=-0.009;entryY=0.647;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="MRu5OoeNUI8XGwZFlb8Y-6" target="MRu5OoeNUI8XGwZFlb8Y-15">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="459.76" y="985" as="sourcePoint" />
+            <mxPoint x="460" y="955" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MRu5OoeNUI8XGwZFlb8Y-8" value="&lt;div&gt;Submit request for RestClient&lt;/div&gt;&lt;div&gt;Time: 0s&lt;/div&gt;&lt;div&gt;&lt;div&gt;Get response from mock after 7s&lt;/div&gt;&lt;div&gt;Execute cpu bound operation for 10s&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="670" y="880" width="600" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="MRu5OoeNUI8XGwZFlb8Y-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="MRu5OoeNUI8XGwZFlb8Y-11" target="MRu5OoeNUI8XGwZFlb8Y-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MRu5OoeNUI8XGwZFlb8Y-11" value="&lt;div&gt;All server threads are busy. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Taska are waiting 8s before http.server observation will start start&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e51400;strokeColor=#B20000;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="300" y="620" width="260" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="MRu5OoeNUI8XGwZFlb8Y-15" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="880" width="240" height="90" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
