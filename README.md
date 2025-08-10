@@ -22,7 +22,7 @@ Request of batch == number of CPU
 ```shell
 curl http://localhost:8080/warmup/undertow
 ```
-5. Run simulation flow
+5. Run simulation flow - it will take 27s
 ```shell
 curl http://localhost:8080/send-requests-default/undertow
 ```
@@ -45,7 +45,7 @@ END measuring client. Took: PT15s ❌ Should be 7s
 ```shell
 curl http://localhost:8080/warmup/virtual
 ```
-5. Run simulation flow
+5. Run simulation flow - it will take 27s
 ```shell
 curl http://localhost:8080/send-requests-default/virtual
 ```
