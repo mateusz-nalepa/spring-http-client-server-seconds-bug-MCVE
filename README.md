@@ -1,3 +1,7 @@
+# About this repo
+
+Minimal Verifiable Complete Example - MVCE - for https://github.com/spring-projects/spring-boot/issues/46757
+
 # Current and expected behaviour
 
 ![Current and Expected behaviour.drawio.png](Current%20and%20Expected%20behaviour.drawio.png)

@@ -43,7 +43,6 @@ class VirtualWebController(
             .get()
             .uri("http://localhost:8083/mock/$index/$mockDelaySeconds")
             .header(DUMMY_INDEX, index)
-            .header(WEB_CLIENT_PENDING_REQUEST_TIME, System.nanoTime().toString())
             .retrieve()
             .body(SomeResponse::class.java)!!
             .also {
